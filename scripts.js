@@ -21,4 +21,3 @@ setInterval(function () {
   }
   visible = !visible;
 }, 1000);
-  
