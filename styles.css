@@ -71,17 +71,33 @@ h1, p1 {
 
 .project-container {
   border: 2px solid white;
+  border-radius: 10px;
   padding: 20px;
-  margin: 20px;
-  cursor: pointer;
+  margin: 20px 0;
 }
 
 .project-container:hover {
-  background-color: #f1f1f1;
+  background-color: #6e6b6b;
 }
 
 .project-container h2 a {
   text-decoration: none;
   color: inherit;
 }
+
+.project-container a:visited h2 {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  text-decoration: none;
+  color: white;
+}
+
+h2.no-underline {
+  text-decoration: none;
+}
+
+
 
