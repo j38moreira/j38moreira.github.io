@@ -68,3 +68,20 @@ h1, p1 {
   margin: 0 10px;
   text-decoration: none;
 }
+
+.project-container {
+  border: 2px solid white;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.project-container:hover {
+  background-color: #f1f1f1;
+}
+
+.project-container h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
