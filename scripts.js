@@ -33,3 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   }, 1000);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var button = document.querySelector('.button');
+    button.addEventListener('click', function() {
+        var url = 'https://ispgaya-my.sharepoint.com/personal/ispg2019101037_ispgaya_pt/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fispg2019101037%5Fispgaya%5Fpt%2FDocuments%2Frelatorio%5Festagio%5Fjoaomoreira%2Epdf&parent=%2Fpersonal%2Fispg2019101037%5Fispgaya%5Fpt%2FDocuments&ga=1';
+        window.open(url, '_blank');
+    });
+});
