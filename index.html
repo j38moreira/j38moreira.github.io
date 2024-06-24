@@ -1,67 +1,88 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <center>
-            <p id="click">Click</p>
-            <img src="avatar.png" alt="Avatar" class="avatar" onclick="showIcons()">
-            <div class="icon-container" id="iconContainer">
-                <a href="https://www.linkedin.com/in/j38moreira/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
-                <a href="https://github.com/j38moreira" target="_blank"><i class="fa fa-github-square" style="font-size: 24px;"></i></a>
-            </div>
-            <p id="here">here.</p>
-        </center>       
-        <div id="leftbox">
-            <h1>String about;</h1>
-            <p1>ras pellentesque egestas nibh non scelerisqu</p1>
-            <h3>String languages;</h3>
-            <p2>New Paragraph</p2>
-        </div>        
-        <div id="rightbox">
-            <h1>String projects;</h1>
-            <div class="projects-container" id="projectsContainer">
-                <div class="project-container">
-                    <a>
-                        <h2 class="no-underline">Project 1</h2>
-                        <p>Description of Project 1</p>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="nav-left">
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+        </div>
+        <div class="nav-center">
+            <div class="avatar-container">
+                <img src="avatar.png" alt="Avatar" class="avatar" onclick="showIcons()">
+                <div class="icon-container left" id="iconContainerLeft">
+                    <a href="https://www.linkedin.com/in/j38moreira/" target="_blank">
+                        <i class="fa fa-linkedin-square" style="font-size:24px"></i>
                     </a>
                 </div>
-                <div class="project-container">
-                    <a>
-                        <h2 class="no-underline">Project 2</h2>
-                        <p>Description of Project 2</p>
-                    </a>
-                </div>
-                <div class="project-container">
-                    <a>
-                        <h2 class="no-underline">Project 3</h2>
-                        <p>Description of Project 3</p>
-                    </a>
-                </div>
-                <div class="project-container">
-                    <a>
-                        <h2 class="no-underline">Project 4</h2>
-                        <p>Description of Project 4</p>
-                    </a>
-                </div>
-                <div class="project-container">
-                    <a>
-                        <h2 class="no-underline">Project 5</h2>
-                        <p>Description of Project 5</p>
-                    </a>
-                </div>
-                <div class="project-container">
-                    <a>
-                        <h2 class="no-underline">Project 6</h2>
-                        <p>Description of Project 6</p>
+                <div class="icon-container right" id="iconContainerRight">
+                    <a href="https://github.com/j38moreira" target="_blank">
+                        <i class="fa fa-github-square" style="font-size: 24px;"></i>
                     </a>
                 </div>
             </div>
-        </div>        
-        <script src="scripts.js"></script>
-    </body>
+        </div>
+        <div class="nav-right">
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+        </div>
+    </div>
+    <div id="sobre" class="section">
+        <br><br><br>
+        <h1>Sobre estágio</h1>
+        <p>Estágio realizado na Aquário Electrónica</p>
+        <p>Foi desenvolvido dois projetos durante o período do estágio curriculo</p>
+        <div class="button-container">
+            <button class="button">Download Relatório de estágio</button>
+        </div>
+        <br><br><br>
+        <i class="fa fa-building" style="font-size:48px;color:#6fc1ca"></i>
+        <h3>Aquário Electrónica</h3>
+        <p>Fundada em 1988, a Aquário Electrónica tem duas lojas no Porto e uma em Braga.</p>
+        <p>Aquário Electrónica tem um objetivo simples: Fornecer aos clientes todo o tipo de soluções confiáveis e acessíveis não só de Electrónica como também de Consumo.</p>
+    </div>
+    <hr class="divider">
+    <div id="projetos" class="section2">
+        <h1>Projetos</h1>
+        <i class="fa fa-code" style="font-size:48px;color:#6fc1ca"></i>
+        <h3>Tecnologias</h3>
+        <p><strong>Backend:</strong> Python</p>
+        <p><strong>Frontend:</strong> PyQT5 (biblioteca Python)</p>
+        <p><strong>Base de dados:</strong> SQL Server</p>
+        <p><strong>Tecnologias adicionais:</strong> REST API</p>
+
+        <div class="card-container">
+            <div class="card">
+                <i class="fa fa-code" style="font-size:48px;color:#6fc1ca"></i>
+                <h3>Integração de Web Services</h3>
+                <p>O foco principal deste projeto foi a integração de web services da E-goi com a empresa.</p>  
+                <p>As tarefas englobaram o desenvolvimento de processos automatizados para campanhas de e-mail, a criação de segmentos e a segmentação do público-alvo, o envio de e-mails automáticos e a inserção e a remoção de clientes na plataforma da E-goi, bem como a realização de uma interface para os utilizadores.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-code" style="font-size:48px;color:#6fc1ca"></i>
+                <h3>Aplicação desktop de comparação</h3>
+                <p>O objetivo deste projeto foi desenvolver uma interface de comparação de produtos entre dados já existentes na base de dados da empresa, e de dados de extraídos via web scraping.</p>  
+                <p>As tarefas desenvolvidas no âmbito deste projeto envolveram a leitura de ficheiros CSV e ficheiros Excel (XLSX, XLS), a apresentação dos dados dos ficheiros numa tabela com a possibilidade de filtragem, a seleção de produtos da tabela para possível comparação de dados dos próprios produtos, selecionando os campos do produto a comparar, e a alteração de estado dos produtos na base de dados.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
